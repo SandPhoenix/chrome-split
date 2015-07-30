@@ -1,0 +1,28 @@
+{
+  "name": "chromesplit",
+  "version": "1.0",
+  "description": "Split open tabs into two adjacent windows",
+  "permissions": [
+    "tabs",
+    "system.display"  
+  ],
+  "browser_action": {
+    "default_title": "Split!",
+    "default_icon": "icon48.png"
+  },
+  "icons": {
+    "48": "icon48.png",
+    "128": "icon128.png" },
+  "background": {
+    "scripts": ["script.js"],
+    "persistent": false
+  },
+  "commands": {
+    "_execute_browser_action": {
+      "suggested_key": {
+        "default":"Alt+S"
+      }
+    }
+  },
+  "manifest_version": 2
+}
